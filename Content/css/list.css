@@ -1,0 +1,36 @@
+.card{
+    width: 18rem;
+    margin : auto;
+}
+.card-body{
+    height:200px;
+}
+.card-img-top{
+    height:200px;
+}
+.card-columns .card {
+    margin-bottom: 1rem;
+}
+@media (min-width:550px) and (max-width:991px) {
+    .card-columns {
+        column-count: 2;
+    }
+}
+
+/* Sorting */
+.navbar-nav{
+    margin: auto;
+}
+.nav-item{
+    padding:10px;
+}
+.btn-sm{
+    line-height: 25px;
+    font-size: 14px;
+}
+
+
+
+.sort{
+    background-color: #f8f9fa!important;
+}
