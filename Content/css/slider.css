@@ -1,8 +1,3 @@
-edge{
-    color: #bbb;
-    font-size: 0.8rem;
-}
-
 .container-fluid {
     margin: auto;
     margin-top:10% !important;
@@ -17,6 +12,7 @@ edge{
 }
 .card-body{
     padding:20px;
+    height: 200px;
 }
 .carousel-inner {
     width:80% !important;
@@ -39,6 +35,10 @@ edge{
     font-size: 40px;
     color: #000
 
+}
+.carousel-btn{
+    float: right;
+    margin-bottom: 15px;
 }
 @media (max-width: 768px){
     .carousel-control-next {

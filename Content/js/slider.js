@@ -24,7 +24,7 @@ $(document).ready(function() {
         }
     });
     $('#carouselExample').carousel({ 
-        interval: 2000
+        interval: 3000
     });
 /* show lightbox when clicking a thumbnail */
     $('a.thumb').click(function(event){

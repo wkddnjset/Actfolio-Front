@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>@ViewBag.Title</title>
+  <title>Actfolio</title>
   <meta charset="utf-8" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
-  <link href="https://fonts.googleapis.com/css?family=Calligraffitti" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Calligraffitti|Gothic+A1" rel="stylesheet">
   <link rel="stylesheet" href="../Content/css/style.css">
   <link rel="stylesheet" href="../Content/css/list.css">
 </head>
@@ -28,37 +27,47 @@
 <div class="sort mb-5">
     <ul class="nav justify-content-center">
       <li class="nav-item">
-        <div class="nav-item form-check ml-2">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-          <label class="form-check-label" for="defaultCheck1">
-            Default checkbox
-          </label>
-        </div>
-      </li>
-      <li class="nav-item">
-        <div class="nav-item form-check ml-2">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-          <label class="form-check-label" for="defaultCheck2">
-            Default checkbox
-          </label>
-        </div>
-      </li>
-      <li class="nav-item">
-        <div class="nav-item form-check ml-2">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
-          <label class="form-check-label" for="defaultCheck3">
-            Default checkbox
-          </label>
-        </div>
-      </li>
-      <li class="nav-item">
-        <div class="p-1 btn-group btn-group-toggle" data-toggle="buttons">
-          <label class="btn btn-dark btn-sm">
+        <label class="p-1" for="state">성별</label>
+        <div class="p-1 btn-group btn-group-toggle w-100 gender-btn-group" data-toggle="buttons">
+          <label class="btn btn-outline-dark male-btn">
             <input type="radio" name="options" id="option2" autocomplete="off"> 남자
           </label>
-          <label class="btn btn-info btn-sm">
+          <label class="btn btn-outline-dark female-btn">
             <input type="radio" name="options" id="option3" autocomplete="off"> 여자
           </label>
+        </div>
+      </li>
+      <li class="nav-item">
+        <label class="p-1" for="state">출생연도</label>
+        <div class="p-1 form-check">
+          <select class="custom-select d-block" id="state" required="">
+            <option value="">전체</option>
+            <option value="1990">1990</option>
+          </select>
+        </div>
+      </li>
+      <li class="nav-item">
+        <label class="p-1" for="state">분야</label>
+        <div class="p-1 form-check">
+          <select class="custom-select d-block" id="state" required="">
+            <option value="">전체</option>
+            <option value="commeral">상업영화</option>
+            <option value="indeendent">독립영화</option>
+            <option value="student">학생작품</option>
+            <option value="cf">CF</option>
+          </select>
+        </div>
+      </li>
+      <li class="nav-item">
+        <label class="p-1" for="state">지역</label>
+        <div class="p-1 form-check">
+          <select class="custom-select d-block" id="state" required="">
+            <option value="">전체</option>
+            <option value="1">서울/경기</option>
+            <option value="2">독립영화</option>
+            <option value="3">학생작품</option>
+            <option value="4">CF</option>
+          </select>
         </div>
       </li>
     </ul>
@@ -66,54 +75,75 @@
 <div class="container mb-3">
   <div class="card-columns">
     <div class="card">
-      <img class="card-img-top" src="http://placehold.it/350x200/" alt="Card image cap">
+      <img class="card-img-top" src="../Content/images/boyong.jpg" alt="Card image cap">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
+        <h5 class="card-title">박보영<edge> 배우님</edge></h5>
         <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <a href="./detail.html" class="btn btn-outline-dark btn-sm profile-detail-btn">프로필 상세보기</a>
       </div>
     </div>
     <div class="card">
-      <img class="card-img-top" src="http://placehold.it/350x180/" alt="Card image cap">
+      <img class="card-img-top" src="../Content/images/boyong.jpg" alt="Card image cap">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
+        <h5 class="card-title">박보영<edge> 배우님</edge></h5>
         <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <a href="#" class="btn btn-outline-dark btn-sm profile-detail-btn">프로필 상세보기</a>
       </div>
     </div>
     <div class="card">
-      <img class="card-img-top" src="http://placehold.it/350x200/" alt="Card image cap">
+      <img class="card-img-top" src="../Content/images/wooseung.jpg" alt="Card image cap">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
+        <h5 class="card-title">정우성<edge> 배우님</edge></h5>
         <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <a href="#" class="btn btn-outline-dark btn-sm profile-detail-btn">프로필 상세보기</a>
       </div>
     </div>
     <div class="card">
-      <img class="card-img-top" src="http://placehold.it/350x180/" alt="Card image cap">
+      <img class="card-img-top" src="../Content/images/wooseung.jpg" alt="Card image cap">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
+        <h5 class="card-title">정우성<edge> 배우님</edge></h5>
         <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <a href="#" class="btn btn-outline-dark btn-sm profile-detail-btn">프로필 상세보기</a>
       </div>
     </div>
     <div class="card">
-      <img class="card-img-top" src="http://placehold.it/350x200/" alt="Card image cap">
+      <img class="card-img-top" src="../Content/images/an.png" alt="Card image cap">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
+        <h5 class="card-title">안재홍<edge> 배우님</edge></h5>
         <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <a href="#" class="btn btn-outline-dark btn-sm profile-detail-btn">프로필 상세보기</a>
       </div>
     </div>
     <div class="card">
-      <img class="card-img-top" src="http://placehold.it/350x180/" alt="Card image cap">
+      <img class="card-img-top" src="../Content/images/an.png" alt="Card image cap">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
+        <h5 class="card-title">안재홍<edge> 배우님</edge></h5>
         <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <a href="#" class="btn btn-outline-dark btn-sm profile-detail-btn">프로필 상세보기</a>
       </div>
     </div>
   </div>
+</div>
+<div class="mb-3">
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+      <li class="page-item disabled">
+        <a class="page-link" href="#" tabindex="-1">이전</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">다음</a>
+      </li>
+    </ul>
+  </nav>
 </div>
 <!-- Footer --><!-- Footer --><!-- Footer --><!-- Footer --><!-- Footer -->
 <footer>
@@ -121,9 +151,9 @@
     <div class="col-lg-12 text-center">
       <div class="footer-top">
         <ul>
-          <li><a href="/skin/page/company01.html">회사소개</a></li>
-          <li><a href="/skin/page/service01.html">서비스소개</a></li>
-          <li><a href="/bbs/bbs/?bbs_no=9">개인정보 및 약관</a></li>
+          <li><a class="mr-3" href="/skin/page/company01.html">회사소개</a></li>
+          <li><a class="mr-3" href="/skin/page/service01.html">서비스소개</a></li>
+          <li><a class="mr-3" href="/bbs/bbs/?bbs_no=9">개인정보 및 약관</a></li>
           <li><a href="/bbs/bbs/?bbs_no=7">고객센터</a></li>
         </ul>
       </div>

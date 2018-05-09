@@ -1,12 +1,10 @@
 .card{
-    width: 18rem;
+    width: 18rem !important;
     margin : auto;
 }
-.card-body{
-    height:200px;
-}
-.card-img-top{
-    height:200px;
+.profile-detail-btn{
+    float: right;
+    margin-bottom: 15px;
 }
 .card-columns .card {
     margin-bottom: 1rem;
@@ -16,7 +14,16 @@
         column-count: 2;
     }
 }
-
+@media (min-width: 1200px){
+    .container {
+        max-width: 960px;
+    }  
+}
+@media (min-width: 576px) and (max-width: 991px){
+    .container {
+        max-width: 630px;
+    }
+}
 /* Sorting */
 .navbar-nav{
     margin: auto;
@@ -28,9 +35,12 @@
     line-height: 25px;
     font-size: 14px;
 }
-
-
-
 .sort{
     background-color: #f8f9fa!important;
+}
+.custom-select{
+    width: 120px;
+}
+.gender-btn-group{
+    margin-right: -30px;
 }
